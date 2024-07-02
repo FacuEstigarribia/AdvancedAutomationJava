@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="RetrySuite" parallel="methods" thread-count="4">
-    <test name="RetryTests">
-        <parameter name="maxRetryCount" value="3"/>
-        <classes>
-            <class name="com.solvd.advancedautomation.TestClassExample"/>
-        </classes>
-    </test>
-</suite>
