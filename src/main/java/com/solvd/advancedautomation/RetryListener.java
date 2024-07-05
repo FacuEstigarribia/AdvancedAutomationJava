@@ -18,12 +18,10 @@ public class RetryListener implements IAnnotationTransformer {
     @Override
     public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
         IRetryAnalyzer retryAnalyzer = annotation.getRetryAnalyzer();
-        if (retryAnalyzer == null) {
-            retryAnalyzer = new RetryAnalyzer();
-            ((RetryAnalyzer) retryAnalyzer).setMaxRetryCount(maxRetryCount);
-            annotation.setRetryAnalyzer(retryAnalyzer.getClass());
-        } else if (retryAnalyzer instanceof RetryAnalyzer) {
-            ((RetryAnalyzer) retryAnalyzer).setMaxRetryCount(maxRetryCount);
+        if (retryAnalyzer == null || retryAnalyzer.getClass() != RetryAnalyzer.class) {
+            RetryAnalyzer analyzer = new RetryAnalyzer();
+            analyzer.setMaxRetryCount(maxRetryCount);
+            annotation.setRetryAnalyzer(analyzer.getClass());
         }
     }
 }

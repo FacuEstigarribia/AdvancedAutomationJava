@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="RetrySuite" parallel="methods" thread-count="4">
+    <listeners>
+        <listener class-name="com.solvd.advancedautomation.RetryListener"/>
+    </listeners>
     <test name="RetryTests">
         <parameter name="maxRetryCount" value="3"/>
         <classes>
