@@ -8,14 +8,26 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class EmailSender {
 
+    private static final String CONFIG_FILE = "data.properties";
+    private static Properties properties = new Properties();
+
+    static {
+        try {
+            properties.load(new FileInputStream(CONFIG_FILE));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     private static final Log LOGGER = LogFactory.getLog(EmailSender.class);
-    private static final String EMAIL_FROM = "testngpeldemo@gmail.com";
-    private static final String EMAIL_TO = "testngpeldemo@gmail.com";
-    private static final String APP_PASSWORD = "twfw ynxy buqw wnju";
+    private static final String EMAIL_FROM = properties.getProperty("email_from");
+    private static final String EMAIL_TO = properties.getProperty("email_to");
+    private static final String APP_PASSWORD = properties.getProperty("app_password");
 
     private static final String EMAIL_SUBJECT = "Email subject";
     private static final String EMAIL_CONTENT = "This is my email sent from Gmail using Java";
@@ -53,7 +65,6 @@ public class EmailSender {
 
         Folder inbox = store.getFolder("INBOX");
         inbox.open(Folder.READ_ONLY);
-
         // Search for the email with the specific subject
         Message[] messages = inbox.search(new SubjectTerm(EMAIL_SUBJECT));
         for (Message message : messages) {
@@ -63,7 +74,6 @@ public class EmailSender {
                 return true;
             }
         }
-
         inbox.close(false);
         store.close();
         return false;
