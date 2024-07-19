@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.solvd.advancedautomation.TestClassExample
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 6, Time elapsed: 5.299 sec <<< FAILURE!
+test1(com.solvd.advancedautomation.TestClassExample)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Failing test1 on purpose
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.solvd.advancedautomation.TestClassExample.test1(TestClassExample.java:9)
+
+test2(com.solvd.advancedautomation.TestClassExample)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Failing test2 on purpose
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.solvd.advancedautomation.TestClassExample.test2(TestClassExample.java:14)
+

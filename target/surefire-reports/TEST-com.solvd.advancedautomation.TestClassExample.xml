@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="8" failures="2" name="com.solvd.advancedautomation.TestClassExample" time="0.004" errors="0" skipped="6">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.10+7"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/solvd/Desktop/Java/AdvancedAutomationJava"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="419"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/solvd/Desktop/Java/AdvancedAutomationJava"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.10+7"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.io.tmpdir" value="/var/folders/m9/_tqykhhn5lg_66stmphf9npm0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/solvd/apache-maven-3.8.6/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/solvd/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/solvd/apache-maven-3.8.6/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="14.5"/>
+    <property name="library.jansi.path" value="/Users/solvd/apache-maven-3.8.6/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/solvd"/>
+    <property name="user.timezone" value="America/Argentina/Buenos_Aires"/>
+    <property name="file.encoding" value="US-ASCII"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="solvd"/>
+    <property name="java.class.path" value="/Users/solvd/apache-maven-3.8.6/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -U"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="native.encoding" value="US-ASCII"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.stderr.encoding" value="US-ASCII"/>
+    <property name="maven.home" value="/Users/solvd/apache-maven-3.8.6"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.10+7"/>
+    <property name="sun.stdout.encoding" value="US-ASCII"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="com.solvd.advancedautomation.TestClassExample" name="test1" time="0.003">
+    <skipped/>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@402a079c
+</system-out>
+  </testcase>
+  <testcase classname="com.solvd.advancedautomation.TestClassExample" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.solvd.advancedautomation.TestClassExample" name="test1" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.solvd.advancedautomation.TestClassExample" name="test1" time="0.001">
+    <failure message="Failing test1 on purpose" type="java.lang.AssertionError">java.lang.AssertionError: Failing test1 on purpose
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.solvd.advancedautomation.TestClassExample.test1(TestClassExample.java:9)
+</failure>
+  </testcase>
+  <testcase classname="com.solvd.advancedautomation.TestClassExample" name="test2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.solvd.advancedautomation.TestClassExample" name="test2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.solvd.advancedautomation.TestClassExample" name="test2" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.solvd.advancedautomation.TestClassExample" name="test2" time="0">
+    <failure message="Failing test2 on purpose" type="java.lang.AssertionError">java.lang.AssertionError: Failing test2 on purpose
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.solvd.advancedautomation.TestClassExample.test2(TestClassExample.java:14)
+</failure>
+  </testcase>
+</testsuite>
