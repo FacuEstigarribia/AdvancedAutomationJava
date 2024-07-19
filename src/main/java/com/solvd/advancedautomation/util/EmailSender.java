@@ -1,16 +1,13 @@
 package com.solvd.advancedautomation.util;
 
-import com.solvd.advancedautomation.emailverification.pages.HomePage;
 import jakarta.mail.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.lang.invoke.MethodHandles;
+
 import java.util.Properties;
 
 public class EmailSender {
-    protected static final Properties properties = ConfigLoader.getProperties();
+    protected static final Properties properties = DataLoader.getProperties();
     private static final Logger LOGGER = LoggerFactory.getLogger(EmailSender.class);
     private static final String EMAIL_FROM = properties.getProperty("email_from");
     private static final String APP_PASSWORD = properties.getProperty("app_password");

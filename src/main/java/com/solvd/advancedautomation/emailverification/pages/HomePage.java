@@ -1,13 +1,11 @@
 package com.solvd.advancedautomation.emailverification.pages;
 
-import com.solvd.advancedautomation.functionality.JS;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.solvd.advancedautomation.functionality.JSutil;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.slf4j.LoggerFactory;
 
 public class HomePage {
    // private static final Logger LOGGER =  LoggerFactory.getLogger(HomePage.class);
@@ -24,11 +22,17 @@ public class HomePage {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
+
+    public void open(){
+        driver.get("https://sendtestemail.com/");
+    }
+
+
     public void inputEmail(String email) {
         emailInputField.sendKeys(email);
     }
     public void clickOnSendBtn() {
-        JS.scrollToElement(driver, sendTestButton);
+        JSutil.scrollToElement(driver, sendTestButton);
         sendTestButton.click();
     }
 
