@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ConfigLoader {
+public class DataLoader {
     private static final String CONFIG_FILE = "src/main/resources/data.properties";
     private static final Properties properties = new Properties();
 
